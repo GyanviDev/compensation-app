@@ -10,7 +10,7 @@ export default function CompanyPage() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch(`http://localhost:4000/company/${company}`)
+    fetch(`https://compensation-app.onrender.com/company/${company}`)
       .then(r => r.json())
       .then(d => { if (d.error) setError(d.error); else setData(d); setLoading(false); })
       .catch(() => { setError('Failed to load'); setLoading(false); });

@@ -14,7 +14,7 @@ export default function Salaries() {
     if (filters.role) params.append('role', filters.role);
     if (filters.level) params.append('level', filters.level);
     if (filters.location) params.append('location', filters.location);
-    const res = await fetch(`http://localhost:4000/salaries?${params}`);
+    const res = await fetch(`https://compensation-app.onrender.com/salaries?${params}`);
     const data = await res.json();
     setSalaries(data);
     setLoading(false);

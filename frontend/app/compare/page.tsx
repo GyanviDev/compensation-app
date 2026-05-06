@@ -11,7 +11,7 @@ export default function Compare() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:4000/salaries')
+    fetch('https://compensation-app.onrender.com/salaries')
       .then(r => r.json())
       .then(setSalaries);
   }, []);
