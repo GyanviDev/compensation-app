@@ -71,7 +71,7 @@ export default function Salaries() {
                 {salaries.map((s: any, i: number) => (
                   <tr key={s.id} style={{ background: i % 2 === 0 ? '#0f172a' : '#1e293b', borderBottom: '1px solid #1e293b' }}>
                     <td style={{ padding: '12px 16px' }}>
-                      <Link href={`/company/${s.company}`} style={{ color: '#38bdf8', textDecoration: 'none', fontWeight: 'bold', textTransform: 'capitalize' }}>{s.company}</Link>
+                      <a href={`/company/${s.company}`} style={{ color: '#38bdf8', textDecoration: 'none', fontWeight: 'bold', textTransform: 'capitalize' }}>{s.company}</a>
                     </td>
                     <td style={{ padding: '12px 16px' }}>{s.role}</td>
                     <td style={{ padding: '12px 16px' }}><span style={{ background: '#1d4ed8', padding: '2px 8px', borderRadius: '4px', fontSize: '12px' }}>{s.level}</span></td>
