@@ -41,7 +41,7 @@ export default function Home() {
         {[
           {title:'📊 Salary Table',desc:'Filter by company, role, level, location. Sorted by total comp.',href:'/salaries'},
           {title:'⚖️ Compare',desc:'Pick any 2 salaries and see a side-by-side breakdown.',href:'/compare'},
-          {title:'🏢 Company Page',desc:'See median pay and level distribution per company.',href:'/company/google'},
+          {title:'🏢 Company Page',desc:'See median pay and level distribution per company.',href:'/companies'},
         ].map(card=>(
           <Link key={card.href} href={card.href} style={{textDecoration:'none'}}>
             <div style={{background:'#1e293b',border:'1px solid #334155',borderRadius:'12px',padding:'24px',width:'240px',cursor:'pointer'}}>
